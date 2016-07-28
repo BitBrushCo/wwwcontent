@@ -26,39 +26,19 @@ h3 {
   font-size: 18px;
 }
 
-
-/*************************
-*******Parallax******
-**************************/
-.parallax {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+.sub-heading{
+  border-left: 4px double #2ac6f7;
+  margin-bottom: 30px
+}
+.sub-heading h2{
+  margin: 0px;
+  text-transform: uppercase;
+  
 }
 
-.parallax,
-.parallax h1,
-.parallax h2,
-.parallax h3,
-.parallax h4,
-.parallax h5,
-.parallax h6 {
-  color: #fff;
-}
-
-.parallax input[type="text"],
-.parallax input[type="text"]:hover,
-.parallax input[type="email"],
-.parallax input[type="email"]:hover,
-.parallax input[type="url"],
-.parallax input[type="url"]:hover,
-.parallax input[type="password"],
-.parallax input[type="password"]:hover,
-.parallax textarea,
-.parallax textarea:hover {
-  font-weight: 300;
-  color: #fff;
+.sub-heading span{
+  text-transform: uppercase;
+  letter-spacing: .5px
 }
 
 
@@ -68,10 +48,6 @@ h3 {
 .btn {
   border: 0;
   border-radius: 0;
-}
-
-.btn.btn-primary:hover {
-  background-color: #017fb5;
 }
 
 .navbar-nav li a:hover, 
@@ -213,19 +189,6 @@ section {
 .carousel-fade .carousel-inner .active {
   opacity: 1;
 }
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
 
 #home-slider .fa-angle-down {
   position: absolute;
@@ -264,40 +227,6 @@ section {
 .navbar-brand img{
   margin:10px 0px;
 }
-
-
-
-
-/*************************
-********Service CSS*******
-**************************/
-.sub-heading{
-  border-left: 4px double #2ac6f7;
-  margin-bottom: 30px
-}
-.sub-heading h2{
-  margin: 0px;
-  text-transform: uppercase;
-  
-}
-
-.sub-heading span{
-  text-transform: uppercase;
-  letter-spacing: .5px
-}
-
-.services li a{
-  border-radius: 0px;
-  padding: 25px 15px;
-  margin-bottom: 5px;
-  border:1px solid #028fcc;
-}
-
-.services>li.active>a, .services>li.active>a:focus, .services>li.active>a:hover{
-  background: #028fcc;
-  border:1px solid #028fcc;
-}
-
 
 
 
@@ -571,14 +500,6 @@ section {
 /*************************
 *********Team CSS*********
 **************************/
-#team {
-  padding-top: 0;
-}
-
-.team-members {
-  margin-bottom: 25px;
-}
-
 .social-icons {
   margin-top:30px;
   text-align: center;
@@ -617,407 +538,10 @@ section {
   transform: scale(1.2);
 }
 
-.team-member {
-  text-align: center;
-  color: #333;
-  font-size: 14px;
-}
-
-.team-member:hover .social-icons ul li a.facebook {
-  background-color: #3b5999;
-}
-.team-member:hover .social-icons ul li a.twitter {
-  background-color: #2ac6f7;
-}
-.team-member:hover .social-icons ul li a.dribbble {
-  background-color: #ff5b92;
-}
-.team-member:hover .social-icons ul li a.linkedin {
-  background-color: #036dc0;
-}
-.team-member:hover .social-icons ul li a.rss {
-  background-color: #ff6b00;
-}
-
-#team .img-responsive {
-  width: 100%;
-}
-
-.member-info h3 {
-  margin-top: 35px;
-}
-
-.member-info h4 {
-  font-size: 14px;
-  margin-bottom: 15px;
-  color: #999;
-}
-
-
-/*************************
-*******Features CSS*******
-**************************/
-#features {
-  text-align: center;
-  background-image: url(../images/counter.jpg);
-}
-
-#features i {
-  font-size: 48px;
-}
-
-#features h3 {
-  margin-top: 15px;
-  font-size: 30px;
-  margin-bottom: 7px;
-  color: #fff;
-}
-
-#features .slider-overlay {
-  opacity: 0.8;
-}
-
-
-/*************************
-*****Pricing Table CSS****
-**************************/
-.pricing-table {
-  text-align: center;
-}
-
-.pricing_heading {
-  margin-top: 120px
-}
-
-.pricing_heading h2, 
-.pricing_heading p {
-  color:#4e4e4e;
-}
-
-.pricing-area h1 {
-  font-weight: 300;
-  margin-top: 0;
-  margin-bottom: 15px;
-  color: #fff
-}
-
-.pricing-area span {
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.pricing-area h3, 
-.pricing-area span  {
-  color: #fff;
-}
-
-.plan {
-  position: relative;
-  margin-bottom: 70px;
-}
-
-.pricing-area ul {
-  background:#FAFAFA;
-  padding: 0;
-  margin: 0;
-}
-
-.pricing-area ul li {
-  list-style: none;
-  padding: 15px 0;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.pricing-area ul li:nth-child(even){
-  background:#f5f5f5
-}
-
-.pricing-area .price-three img, 
-.pricing-area .price-six img {
-  position: absolute;
-  right: 15px;
-  top: 0;
-}
-
-.pricing-area .heading-one, 
-.pricing-area .heading-two, 
-.pricing-area .heading-three {
-  padding:17px 0;
-  border-radius:2px 2px 0 0;
-} 
-
-.pricing-area .heading-one, 
-.pricing-area .heading-two, 
-.pricing-area .heading-three, 
-.pricing-area .heading-four, 
-.pricing-area .heading-five, 
-.pricing-area .heading-six, 
-.pricing-area .heading-seven {
-  margin-left: -10px
-}
-
-
-.pricing-area .heading-one, 
-.pricing-area .price-one .plan-action .btn-primary {
-  background: #2c3e50
-}
-
-.pricing-area .heading-two, 
-.pricing-area .price-two .plan-action .btn-primary {
-  background:#2c3e50;
-}
-
-.pricing-area .heading-three,
-.pricing-area .price-three .plan-action .btn-primary {
-  background: #028fcc;
-}
-
-
-.pricing-area .bg{
- background: #fafafa 
-}
-
-
-
-.plan-action {
-  height: 40px;
-}
-
-.pricing-area .plan-action .btn-primary {
-  position: relative;
-  padding:5px 20px;
-  color: #fff
-;
-  margin-top: 5px;
-}
-
-.pricing-area .plan-action .btn-primary:before {
-  border-color: #2c3e50 transparent transparent;
-  border-radius: 5px 0 0 0;
-  border-style: solid;
-  border-width: 12px;
-  bottom: -12px;
-  content: "";
-  height: 0;
-  left: -9px;
-  position: absolute;
-  width: 0;
-  z-index: -1;
-}
-
-.pricing-area .plan-action .btn-primary:after {
-  border-color: #2c3e50 transparent transparent;
-  border-radius: 5px 0 0 0;
-  border-style: solid;
-  border-width: 12px;
-  bottom: -12px;
-  content: "";
-  height: 0;
-  position: absolute;
-  right: -9px;
-  width: 0;
-  z-index: -1;
-}
-
-.pricing-area .price-two .plan-action .btn-primary:before, 
-.pricing-area .price-two .plan-action .btn-primary:after {
-  border-color: #2c3e50 transparent transparent;
-}
-
-.pricing-area .price-three .plan-action .btn-primary:before, 
-.pricing-area .price-three .plan-action .btn-primary:after {
-  border-color: #028fcc transparent transparent;
-}
-
-
-/* ------------------------------------	*/
-/*  	 6. Testimonial Page			*/
-/* -----------------------------------	*/
-
-#testimonials{
-  background:#ECF0F3;
-}
-.single-review{
-  display:none;
-}
-.single-review.active{
-  display:block;
-}
-.reviews-list{
-  margin:0;
-  padding:0;
-  list-style:none;
-}
-.reviews-list li{
-  float:left;
-  width:25%;
-}
-.reviews-list li img{
-  height:auto;
-  width:100%;
-}
-.review_section{
-  background:#F5F7FA;
-  overflow:hidden;
-  position:relative;
-}
-.review_section:before, .review_section:after{
-  background:none repeat scroll 0 0 #fff;
-  content:"";
-  height:100%;
-  left:0;
-  position:absolute;
-  top:0;
-  width:15px;
-  z-index:99;
-}
-.review_section:after{
-  left:auto;
-  right:0;
-}
-.single-review{
-  padding-right:30px;
-}
-
-.single-review > p{
-  padding-top:50px;
-  text-align: justify;
-}
-
-.review-info h2{
-  margin-bottom:10px;
-  margin-top:30px;
-  color:#666;
-  font-weight:400;
-}
-.reviews-list li a{
-  position:relative;
-  display:block;
-}
-.reviews-list li a:before{
-  background:none repeat scroll 0 0 #333;
-  content:"";
-  height:100%;
-  left:0;
-  position:absolute;
-  top:0;
-  width:100%;
-  opacity:.6;
-}
-.reviews-list li.active a:before , .reviews-list li:hover a:before{
-  display:none;
-}
-
-
-/* ------------------------------------	*/
-/*  		 11. Partners Page			*/
-/* -----------------------------------	*/
-
-section#clients{
-  padding-bottom: 100px
-}
-
-.single-partner{
-margin:0 5px;
-}
-.single-partner img{
-border:1px solid #57BDDB;
-width:100%;
-}
-.owl-buttons{
-margin-top:10px;
-margin-left:5px;
-}
-.owl-buttons div{
-border:1px solid #57BDDB;
-color:#57BDDB;
-display:inline-block;
-font-size:20px;
-height:30px;
-line-height:25px;
-margin-right:10px;
-text-align:center;
-width:30px;
-}
-.owl-buttons div.owl-prev{
-}
-.owl-buttons div.owl-next{
-}
-.owl-buttons div:hover{
-opacity:.6;
-}
 
 
 
 
-/*************************
-**********Contact CSS*****
-**************************/
-
-/*#contact {
-  padding-top: 45px;
-  padding-bottom: 0;
-}
-
-#google-map {
-  height: 350px;
-}
-
-#contact-us {
-  background-image:url(../images/contact-bg.jpg);
-  padding-bottom: 90px; 
-}
-
-#contact-us .heading {
-  padding-top: 95px;
-}
-
-.form-control {
-  background-color: transparent;
-  border-color: rgba(255,255,255,.1);
-  height: 50px;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-textarea.form-control {
-  min-height: 180px;
-  resize:none;
-}
-
-.form-group {
-  margin-bottom: 30px;
-}
-
-.contact-info {
-  padding-left:70px;
-  font-weight: 300;
-}
-
-ul.address {
-  margin-top: 30px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.contact-info ul li {
-  margin-bottom: 8px;
-}
-
-.contact-info ul li a {
-  color: #fff;
-}
-
-.btn-submit {
-  display: block;
-  padding: 12px;
-  width: 100%;
-  color: #fff;
-  border:0;
-  margin-top: 40px;
-}*/
 
 #footer {
   color:#fff;
