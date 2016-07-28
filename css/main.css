@@ -250,251 +250,167 @@ section {
 
 #portfolio {
   padding-top:70px;
-  padding-bottom: 100px;
-  background:#F6F6F6
+  padding-bottom: 0px;
+}
+
+.hover-bg .hover-text {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    padding: 20px;
+    color: #ffffff;
+    transition: all 0.8s;
+    -webkit-transition: all 08s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+}
+
+.hover-bg .hover-text.off {
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transform: translateX(100%) translateY(-90%);
+    transform: translateX(100%) translateY(-90%);
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.70);
+}
+.hover-bg:hover .hover-text.off {
+    -webkit-transform: translateX(0%) translateY(-90%);
+    transform: translateX(0%)  translateY(-90%);
+    opacity: 1;
+}
+
+#tf-works { padding: 60px 0 }
+ul.cat { margin: 30px 0 }
+ul.cat li a {
+    background: inherit;
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+ul.cat li a:hover,
+ul.cat li a:focus,
+ul.cat li a.active {
+    background: #2ac6f7;
+    border: 1px solid #2ac6f7;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #fff;
+}
+.nopadding { padding: 0 }
+.box a { margin: 2px }
+.box .hover-bg {
+    position: relative;
+    overflow: hidden;
+}
+.box .hover-bg .hover-text {
+    height: 100%;
+    bottom: 0;
+    -webkit-transform: translateX(0%) translateY(0%);
+    transform: translateX(0%) translateY(0%);
+    background: transparent;
+}
+.box:hover .hover-bg .hover-text { background-color: rgba(1, 1, 1, 0.5) }
+.box .hover-bg:hover .hover-text.off {
+    -webkit-transform: translateX(0%) translateY(0%);
+    transform: translateX(0%)  translateY(0%);
+    opacity: 1;
+}
+.box .hover-text i.fa {
+    font-size: 20px;
+    background: #2ac6f7;
+    color: #fff;
+    padding: 13px;
+    position: relative;
+    top: 40%;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    transition: all 0.5s;
+}
+.box .hover-text i.fa:hover { background: #fff;color:#2ac6f7 }
+.box .hover-text i.fa.fa-expand {
+    border-top-right-radius: 0;
+    -webkit-transform: translateX(-400%) translateY(0%);
+    transform: translateX(-400%)  translateY(0%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.box:hover .hover-text i.fa.fa-expand {
+    -webkit-transform: translateX(0%) translateY(0%);
+    transform: translateX(0%)  translateY(0%);
+    opacity: 1;
+}
+.box .hover-text i.fa.fa-chain {
+    border-top-left-radius: 0;
+    -webkit-transform: translateX(400%) translateY(0%);
+    transform: translateX(400%)  translateY(0%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.box:hover .hover-text i.fa.fa-chain {
+    -webkit-transform: translateX(0%) translateY(0%);
+    transform: translateX(0%)  translateY(0%);
+    opacity: 1;
 }
 
 
-#portfolio 
-.portfolio-filter {
-  margin-bottom:40px;
-  margin-top:10px;
-  padding-left: 0px
-}
 
-#portfolio 
-.portfolio-filter li {
-  display: inline-block;
-}
+/* Isotope Filter */
+.isotope-item { z-index: 2 }
 
-#portfolio 
-.portfolio-filter li a:hover, 
-#portfolio 
-.portfolio-filter li a:focus,
-#portfolio 
-.portfolio-filter li a:active , 
-#portfolio 
-.portfolio-filter li .active{
-  background: #2ac6f7;
-	color: #fff;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-	opacity: 1;
+.isotope,
+.isotope .isotope-item {
+    /* change duration value to whatever you like */
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
 }
-
-#portfolio 
-.portfolio-filter li a {
-	color: #686868;
-	font-size: 16px;
-	text-transform: uppercase;
-	border: none;
-	background: rgba(67, 72, 78, 0);
-	opacity: .8;
-	border: 1px solid rgba(252, 119, 0, 0);
-	border-radius: inherit;
+.isotope-item {
+    margin-right: -1px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
-
-.portfolio-items > div{
-  padding:0;
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
 }
-
-.portfolio-items img{
-  width:100%;
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
 }
-
-.view {  
-  cursor: default;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  width:100%;
+.nivo-lightbox-theme-default .nivo-lightbox-title {
+    font-size: 14px;
+    background: #f1f1f1;
+    border: 1px solid #333;
+    letter-spacing: 2px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 35px;
+    border-radius: 2px;
 }
-
-.efffect h4 {  
-	opacity: 0;
-	transform: scale(0);
-	transition: all 0.5s linear 0s;
+.nivo-lightbox-theme-default.nivo-lightbox-overlay {
+    background: #ffffff !important;
+    background: rgba(255, 255, 255, 1) !important;
 }
-
-.efffect h3 {
-	opacity: 0;
-	transform: scale(0);
-	-webkit-transition: all 0.5s linear 0s;
-	-moz-transition: all 0.5s linear 0s;
-	-ms-transition: all 0.5s linear 0s;
-	-o-transition: all 0.5s linear 0s;
-	transition: all 0.5s linear 0s;
+.nivo-lightbox-theme-default .nivo-lightbox-nav,
+.nivo-lightbox-theme-default .nivo-lightbox-close { opacity: 1 }
+.nivo-lightbox-error {
+    color: #C59A6D !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0) !important;
 }
-
-.efffect img {
-	transform: scaleY(1);
-	-moz-transform: scaleY(1);
-	-webkit-transform: scaleY(1);
-	-o-transform: scaleY(1);
-	-ms-transform: scaleY(1);  
-	transition: all 0.7s ease-in-out 0s;
-	-moz-transition: all 0.7s ease-in-out 0s;
-	-webkit-transition: all 0.7s ease-in-out 0s;
-	-o-transition: all 0.7s ease-in-out 0s;
-}
-
-.view img {
-	display: block;
-	position: relative;
-}
-
-.efffect .mask {
-	background-color: #F6F6F6;
-    border:5px solid #2ac6f7;
-	-webkit-transition: all 0.5s linear 0s;
-	-moz-transition: all 0.5s linear 0s;
-	-ms-transition: all 0.5s linear 0s;
-	-o-transition: all 0.5s linear 0s;
-	transition: all 0.5s linear 0s;
-	opacity: 0
-}
-
-.view .mask, .view .content {
-	height:100%;
-	left: 0;
-	overflow: hidden;
-	position: absolute;
-	top: 0;
-	width:100%;
-}
-
-.mask h3 {
-	color: #43484E;
-	font-family: cabin;
-	font-size: 22px;
-	font-weight: 700;
-	margin-top: 30px;
-	text-transform: uppercase;
-	transition: height 500ms ease 0s;
-}
-
-.mask h4 {
-	color:#000;
-	font-family: roboto;
-	font-size: 14px;
-	font-weight: 200;
-	padding: 0 35px 5px;
-}
-
-.mask i {
-	border: 2px solid #2ac6f7;
-	border-radius: 50%;
-	color: #333;
-	font-size: 17px;
-	margin-left: 8px;
-	padding: 8px;
-}
-
-.mask i:hover{
-	background-color:#2ac6f7;
-	color:#fff;  
-}
-
-/*==================================
-====== Portfolio Hover effect=======
-====================================*/
-
-
-.efffect img {
-   -webkit-transform: scaleY(1);
-   -moz-transform: scaleY(1);
-   -o-transform: scaleY(1);
-   -ms-transform: scaleY(1);
-   transform: scaleY(1);
-   -webkit-transition: all 0.7s ease-in-out;
-   -moz-transition: all 0.7s ease-in-out;
-   -o-transition: all 0.7s ease-in-out;
-   -ms-transition: all 0.7s ease-in-out;
-   transition: all 0.7s ease-in-out;
-}
-.efffect .mask {
-   -webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-   -o-transition: all 0.5s linear;
-   -ms-transition: all 0.5s linear;
-   transition: all 0.5s linear;
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-   cursor: zoom-in;
-}
-.efffect h4 {   
-   background: transparent;
-   -webkit-transform: scale(0);
-   -moz-transform: scale(0);
-   -o-transform: scale(0);
-   -ms-transform: scale(0);
-   transform: scale(0);
-   -webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-   -o-transition: all 0.5s linear;
-   -ms-transition: all 0.5s linear;
-   transition: all 0.5s linear;
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-}
-.efffect h3 {
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-   font-size:22px;
-   -webkit-transform: scale(0);
-   -moz-transform: scale(0);
-   -o-transform: scale(0);
-   -ms-transform: scale(0);
-   transform: scale(0);
-   -webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-   -o-transition: all 0.5s linear;
-   -ms-transition: all 0.5s linear;
-   transition: all 0.5s linear;
-}
-.mask a i {
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-   -webkit-transform:rotate(-180deg);
-   -moz-transform:rotate(-180deg);
-   -o-transform:rotate(-180deg);
-   -ms-transform:rotate(-180deg);
-   transform:rotate(-180deg);
-   -webkit-transition:all 0.5s linear 0.7s;
-   -moz-transition: all 0.5s linear 0.7s;
-   -o-transition:all 0.5s linear 0.7s;
-   -ms-transition:all 0.5s linear 0.7s;
-   transition:all 0.5s linear 0.7s;
-}
-.efffect:hover img {
-   -webkit-transform: scale(10);
-   -moz-transform: scale(10);
-   -o-transform: scale(10);
-   -ms-transform: scale(10);
-   transform: scale(10);
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-}
-.efffect:hover .mask {
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-   filter: alpha(opacity=100);
-   opacity: 1;
-}
-.efffect:hover h4,.efffect:hover h3,.efffect:hover a i {
-   -webkit-transform: scale(1);
-   -moz-transform: scale(1);
-   -o-transform: scale(1);
-   -ms-transform: scale(1);
-   transform: scale(1);
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-   filter: alpha(opacity=100);
-   opacity: 1;
+.nivo-lightbox-theme-default .nivo-lightbox-image img {
+    background: #fff;
+    -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+    border-top: 4px solid #ffcc33;
 }
 
 /*************************
