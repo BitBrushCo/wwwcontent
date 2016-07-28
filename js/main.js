@@ -62,33 +62,6 @@ jQuery(function($) {
 	new WOW().init();
 	//smoothScroll
 	smoothScroll.init();
-	
-	// Progress Bar
-	$('#about-us').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
-		if (visible) {
-			$.each($('div.progress-bar'),function(){
-				$(this).css('width', $(this).attr('aria-valuetransitiongoal')+'%');
-			});
-			$(this).unbind('inview');
-		}
-	});
-
-	//Countdown
-	$('#features').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
-		if (visible) {
-			$(this).find('.timer').each(function () {
-				var $this = $(this);
-				$({ Counter: 0 }).animate({ Counter: $this.text() }, {
-					duration: 2000,
-					easing: 'swing',
-					step: function () {
-						$this.text(Math.ceil(this.Counter));
-					}
-				});
-			});
-			$(this).unbind('inview');
-		}
-	});
 
 
 	//Pretty Photo
@@ -97,31 +70,23 @@ jQuery(function($) {
 	 });
 
 	// portfolio filter
-		//  $(window).load(function(){'use strict',
-		//  	$portfolio_selectors = $('.portfolio-filter >li>a');
-		//  	if($portfolio_selectors!='undefined'){
-		//  		$portfolio = $('.portfolio-items');
-		//  		$portfolio.isotope({
-		//  			itemSelector : '.col-sm-3',
-		//  			layoutMode : 'fitRows'
-		//  		});
+		  $(window).load(function(){'use strict',
+		  	$portfolio_selectors = $('.portfolio-filter >li>a');
+		  	if($portfolio_selectors!='undefined'){
+		  		$portfolio = $('.portfolio-items');
+		  		$portfolio.isotope({
+		  			itemSelector : '.col-sm-3'
+		  		});
 				
-		//  		$portfolio_selectors.on('click', function(){
-		//  			$portfolio_selectors.removeClass('active');
-		//  			$(this).addClass('active');
-		//  			var selector = $(this).attr('data-filter');
-		//  			$portfolio.isotope({ filter: selector });
-		//  			return false;
-		//  		});
-		//  	}
-		//  });
-
-		// jQuery Owl Carousel
-		$(".partner-list").owlCarousel({
-			pagination : false,
-			navigation : true,
-			navigationText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
-		});
+		  		$portfolio_selectors.on('click', function(){
+		  			$portfolio_selectors.removeClass('active');
+		  			$(this).addClass('active');
+		  			var selector = $(this).attr('data-filter');
+		  			$portfolio.isotope({ filter: selector });
+		  			return false;
+		  		});
+		  	}
+		  });
 
 		//Presets
 		var presets = $('.style-chooser ul li');
