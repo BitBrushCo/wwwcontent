@@ -104,25 +104,6 @@ jQuery(function($) {
             keyboardNav: true,                            
         });
 
-	/***************** Google Map ******************/
-
-    function initialize() {
-        var mapCanvas = document.getElementById('map');
-        var mapOptions = {
-            center: new google.maps.LatLng(30.40964, -97.91923),
-			scrollwheel: false,
-			navigationControl: false,
-			mapTypeControl: false,
-			scaleControl: false,
-			draggable: false,
-            zoom: 8,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-    }
-
-    google.maps.event.addDomListener(window, 'load', initialize);
-
 	//Presets
 	// var presets = $('.style-chooser ul li');
 
@@ -141,6 +122,11 @@ jQuery(function($) {
 		
 	
 });
+
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
 
 
