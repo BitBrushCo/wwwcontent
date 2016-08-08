@@ -170,75 +170,6 @@ header .header-content .inner p {
 
 
 
-
-/*#home{
-  position: relative;
-  display: table;
-  width: 100%;
-  min-height: 100%;
-  color: #fff;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.hero-section {
-    height: 100%;
-    padding-bottom: 60px;
-    padding-top: 200px;
-    overflow: hidden;
-}
-.hero-section .container {
-    height: 100%;
-}
-.hero-content {
-    position: relative;
-    display: table;
-    height: 100%;
-    width: 100%;
-}
-.hero-text {
-    display: table-cell;
-    vertical-align: middle;
-    color: #fff;
-    width: 100%;
-    padding-bottom: 10%;
-}
-
-.parallax-overlay{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-     background: url("../images/overaly.png")repeat; 
-}
-.video-background{
-    width: 100%;
-}
-.video-background-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-}
-section{
-    position: relative;
-}
-
-@media ( min-width: 768px ) {
-    .video-section {
-        padding: 100px 0;
-    }
-}
-@media ( min-width: 992px ) {
-    .video-section {
-        padding: 120px 0;
-    }
-}*/
-
 #video-background {
   right: 0; 
   bottom: 0;
@@ -311,7 +242,8 @@ section{
     opacity: 1;
 }
 
-#tf-works { padding: 60px 0 }
+/* Portfolio or works blocks */
+#tf-works { padding: 0 0 0 0}
 ul.cat { margin: 30px 0 }
 ul.cat li a {
     background: inherit;
@@ -328,7 +260,7 @@ ul.cat li a.active {
     border-radius: 3px;
     color: #fff;
 }
-.nopadding { padding: 0 }
+
 .box a { margin: 2px }
 .box .hover-bg {
     position: relative;
@@ -350,7 +282,6 @@ ul.cat li a.active {
 .box .hover-text i.fa {
     font-size: 20px;
     background: #2ac6f7;
-    color: #fff;
     padding: 13px;
     position: relative;
     top: 40%;
@@ -358,8 +289,9 @@ ul.cat li a.active {
     width: 45px;
     height: 45px;
     transition: all 0.5s;
+    color:#fff
 }
-.box .hover-text i.fa:hover { background: #fff;color:#2ac6f7 }
+.box .hover-text i.fa:hover { background: #fff;color: #2ac6f7 }
 .box .hover-text i.fa.fa-expand {
     border-top-right-radius: 0;
     -webkit-transform: translateX(-400%) translateY(0%);
@@ -384,12 +316,17 @@ ul.cat li a.active {
     transform: translateX(0%)  translateY(0%);
     opacity: 1;
 }
-
-
-
+/* Portfolio Style #3 */
+#itemsWorkThree .box{ margin-bottom: 30px }
+#itemsWorkThree .box h5 {
+    border: 1px solid #ddd;
+    padding: 10px 0;
+    margin: 0;
+    cursor: pointer;
+}
 /* Isotope Filter */
 .isotope-item { z-index: 2 }
-
+.isotope-hidden.isotope-item { z-index: 1 }
 .isotope,
 .isotope .isotope-item {
     /* change duration value to whatever you like */
@@ -440,6 +377,52 @@ ul.cat li a.active {
     box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
     border-top: 4px solid #ffcc33;
 }
+/* Single Portfolio Detail */
+#tf-header{
+  margin-top:80px
+}
+
+.portfolio-header{
+  font-size: 30px;
+  text-transform: uppercase;
+  border-left: 4px double #2ac6f7;
+  padding-left: 15px;
+}
+
+.breadcrumb {
+  padding: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.breadcrumb li a.active{
+  color: #656D78
+}
+
+
+#work-detail-one{ padding: 0 0 60px 0 }
+.work-detail .dl-horizontal dt {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.work-related-thumb { margin-bottom: 30px }
+.work-related-thumb .img-thumbnail {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    line-height: 1.42857143;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.work-related-thumb .img-thumbnail:hover { opacity: 0.8 }
 
 /*************************
 *********Team CSS*********
@@ -481,10 +464,6 @@ ul.cat li a.active {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
-
-
-
-
 
 
 #footer {
@@ -582,6 +561,7 @@ section.contact > .container {
   float: none;
   display: inline-block;
   margin: 0 9% 25px;
+  padding-top: 25px;
 }
 .contact .nav-tabs > li > a {
   background: transparent;
@@ -596,17 +576,17 @@ section.contact > .container {
   background-color: transparent;
 }
 .contact .nav-tabs li .fa {
-  background: #0aabe1;
-  text-align: center;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 50px;
-  height: 100px;
-  line-height: 2;
-  width: 100px;
-          box-shadow: 0px 0px 0px 20px rgb(255, 255, 255);
-  -webkit-box-shadow: 0px 0px 0px 20px rgb(255, 255, 255);
-     -moz-box-shadow: 0px 0px 0px 20px rgb(255, 255, 255);
+    background: #0aabe1;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    height: 50px;
+    line-height: 2.5;
+    width: 50px;
+    box-shadow: 0px 0px 0px 20px rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 0px 0px 20px rgb(255, 255, 255);
+    -moz-box-shadow: 0px 0px 0px 20px rgb(255, 255, 255);
 }
 .contact .nav-tabs > li.active > a,
 .contact .nav-tabs > li.active > a:hover,
