@@ -12,6 +12,8 @@ body {
   color: #434A54;
   background-color: #F5F7FA;
   overflow-x: hidden;
+  position: relative;
+  z-index: 8
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -142,133 +144,114 @@ section {
 .navbar-default .navbar-toggle:hover>.navbar-default .navbar-toggle .icon-bar,
 .navbar-default .navbar-toggle:focus>.navbar-default .navbar-toggle .icon-bar { color: #FFCC33 }
 
-
-/* Header Page */
-.caption {
-  position: absolute;
-  top: 50%;
-  margin-top: -104px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  text-transform: uppercase;
-  z-index: 15;
-  font-size: 18px;
-  font-weight: 300;
-  color: #fff;
+header .header-content {
+    position: absolute;
+    width: 100%;
+    padding: 300px 15px;
+    text-align: center;
+    z-index: 2;
 }
 
-.caption-btn {
-  position: absolute;
-  bottom: 30%;
-  margin-top: -104px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  text-transform: uppercase;
-  z-index: 15;
-  font-size: 18px;
-  font-weight: 300;
-  color: #fff;
-}
-
-
-.caption h1 {
-  color: #fff;
-  font-weight: 700;
-  letter-spacing: 10px;
-  margin-bottom: 30px;
-  font-size: 60px;
-}
-
-.caption p {
-  color: #fff;
-  font-weight: 300;
-  font-size: 30px
-}
-
-.caption-btn .btn-start {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  padding:10px 15px;
-  background: #028fcc;
-  border-radius: 1px;
-  margin-top: 40px;
-}
-
-.fa-angle-down {
-  position: absolute;
-  left: 50%;
-  bottom: 50px;
-  color: #fff;
-  display: inline-block;
-  width: 24px;
-  margin-left: -12px;
-  font-size: 24px;
-  line-height: 24px;
-  z-index: 999;
-  -webkit-animation: bounce 3000ms infinite;
-  animation: bounce 3000ms infinite;
-}
-
-#tf-header {
-    padding: 20px 0;
-    background: #fff;
-    margin-top: 70px;
-    color: #ffffff;
-}
-#tf-header .breadcrumb {
-    padding: 8px 15px;
-    margin-bottom: 20px;
-    list-style: none;
-    background-color: transparent;
-    border-radius: 4px;
-    margin-left: -10px;
-    margin-top: -10px;
-}
-#tf-header .breadcrumb > li + li:before {
-    padding: 0 5px;
-    color: #FFF;
-    content: "/\00a0";
-}
-#tf-header .breadcrumb > li a { color: #ffffff }
-/* Home Style */
-#tf-home {
-    background: url(../images/slider/2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: #cfcfcf;
-}
-#tf-home .overlay {
-    background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
-    padding: 20% 0;
-    background-attachment: fixed;
-    min-height: 100%;
-}
-#tf-home h1 { color: #fff }
-.content-heading p.lead { margin-bottom: 80px }
-a.goto-btn {
-    font-size: 18px;
+header .header-content .inner h1 {
+    margin-top: 0;
+    color: #fff;
     font-weight: 700;
-    border-bottom: 2px solid transparent;
-    padding: 10px 0;
-    transition: all 0.5s;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+    font-size: 60px;
 }
-a.goto-btn:hover {
-    color: #ffffff;
-    border-bottom: 2px solid #ffcc33;
+
+header .header-content .inner p {
+    margin-bottom: 50px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px
 }
 
 
+
+
+/*#home{
+  position: relative;
+  display: table;
+  width: 100%;
+  min-height: 100%;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hero-section {
+    height: 100%;
+    padding-bottom: 60px;
+    padding-top: 200px;
+    overflow: hidden;
+}
+.hero-section .container {
+    height: 100%;
+}
+.hero-content {
+    position: relative;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.hero-text {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    width: 100%;
+    padding-bottom: 10%;
+}
+
+.parallax-overlay{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+     background: url("../images/overaly.png")repeat; 
+}
+.video-background{
+    width: 100%;
+}
+.video-background-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+section{
+    position: relative;
+}
+
+@media ( min-width: 768px ) {
+    .video-section {
+        padding: 100px 0;
+    }
+}
+@media ( min-width: 992px ) {
+    .video-section {
+        padding: 120px 0;
+    }
+}*/
+
+#video-background {
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: 9;
+}
+
+#video-background.collapsing {
+  display:none;
+}
 
 
 /*************************
@@ -277,6 +260,8 @@ a.goto-btn:hover {
 #about-us {
   padding: 60px 0 0 0;
   margin-bottom: 120px;
+  z-index: 11;
+  position: relative;
 }
 
 .vimeo-video{
@@ -292,6 +277,8 @@ a.goto-btn:hover {
 #portfolio {
   padding-top:70px;
   padding-bottom: 0px;
+  z-index: 10;
+  position: relative;
 }
 
 .hover-bg .hover-text {
@@ -579,7 +566,9 @@ ul.cat li a.active {
 section.contact {
   padding-top: 120px;
   padding-bottom: 0;
-  background: #ECF0F3
+  background: #ECF0F3;
+  z-index: 10;
+  position: relative;
 }
 section.contact > .container {
   margin-top: -180px;
