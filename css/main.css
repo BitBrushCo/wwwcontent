@@ -184,6 +184,21 @@ header .header-content .inner p {
   display:none;
 }
 
+.fa-angle-down {
+  position: absolute;
+  left: 50%;
+  bottom: 250px;
+  color: #fff;
+  display: inline-block;
+  width: 24px;
+  margin-left: -12px;
+  font-size: 36px;
+  line-height: 24px;
+  z-index: 999;
+  -webkit-animation: bounce 3000ms infinite;
+  animation: bounce 3000ms infinite;
+}
+
 
 /*************************
 ********About CSS*******
