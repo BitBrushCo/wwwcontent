@@ -1,15 +1,27 @@
 /* lg */ 
 @media (min-width: 1200px) {
-
+	.fillWidth-tab{
+		display: none !important;
+	}
 }
 
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
 
+	.fillWidth-tab{
+		display: none !important;
+	}
+
 }
 
 /* sm */
 @media (min-width: 768px) and (max-width: 991px) {
+	.fillWidth{
+		display: none !important;
+	}
+	.fillWidth-tab{
+		display: block !important
+	}
  	.navbar-right li a {
 		font-size: 12px;
 		padding-right: 10px;
