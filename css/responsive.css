@@ -162,7 +162,8 @@
 		display: none !important;
 	}
 	.fillWidth-tab{
-		display: block !important
+		display: block !important;
+		width: 320px !important;
 	}
 
 	.caption p {
@@ -220,7 +221,8 @@
 		display: none !important;
 	}
 	.fillWidth-tab{
-		display: block !important
+		display: block !important;
+		width: 320px !important;
 	}
 
 }
