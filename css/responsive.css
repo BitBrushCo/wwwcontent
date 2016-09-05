@@ -68,7 +68,7 @@
 	}
 	.fillWidth-tab{
 		display: block !important;
-		width: 320px
+		width: 320px !important;
 	}
 	.caption h1 {
 		letter-spacing: 10px;
