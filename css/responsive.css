@@ -67,7 +67,8 @@
 		display: none !important;
 	}
 	.fillWidth-tab{
-		display: block !important
+		display: block !important;
+		width: 320px
 	}
 	.caption h1 {
 		letter-spacing: 10px;
