@@ -63,6 +63,12 @@
 	body {
 		font-size: 14px;
 	}
+	.fillWidth{
+		display: none !important;
+	}
+	.fillWidth-tab{
+		display: block !important
+	}
 	.caption h1 {
 		letter-spacing: 10px;
 		margin-bottom: 15px;
@@ -151,6 +157,12 @@
 		letter-spacing: 5px;
 		font-size: 24px;
 	}
+	.fillWidth{
+		display: none !important;
+	}
+	.fillWidth-tab{
+		display: block !important
+	}
 
 	.caption p {
 		font-size: 18px;
@@ -203,5 +215,11 @@
 
 @media (max-width: 320px) {
    
-   
+  .fillWidth{
+		display: none !important;
+	}
+	.fillWidth-tab{
+		display: block !important
+	}
+
 }
