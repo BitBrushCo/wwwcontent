@@ -8,9 +8,14 @@
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
 
+	.fillWidth{
+		display: block !important;
+	}
+
 	.fillWidth-tab{
 		display: none !important;
 	}
+	
 
 }
 
@@ -20,7 +25,11 @@
 		display: none !important;
 	}
 	.fillWidth-tab{
-		display: block !important
+		display: block !important;
+		width: 480px !important;
+	}
+	.header-content{
+		display: none !important
 	}
  	.navbar-right li a {
 		font-size: 12px;
@@ -69,6 +78,9 @@
 	.fillWidth-tab{
 		display: block !important;
 		width: 320px !important;
+	}
+	.header-content{
+		display: none !important
 	}
 	.caption h1 {
 		letter-spacing: 10px;
@@ -165,7 +177,9 @@
 		display: block !important;
 		width: 320px !important;
 	}
-
+	.header-content{
+		display: none !important
+	}
 	.caption p {
 		font-size: 18px;
 	}
@@ -223,6 +237,9 @@
 	.fillWidth-tab{
 		display: block !important;
 		width: 320px !important;
+	}
+	.header-content{
+		display: none !important
 	}
 
 }
