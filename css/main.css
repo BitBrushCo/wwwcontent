@@ -122,7 +122,7 @@ section {
 }
 .navbar-brand { 
   float: left;
-  padding: 0
+  padding: 30px 10px;
 }
 .navbar-nav > li > a {
   color: #028fcc !important;
@@ -249,49 +249,31 @@ header .header-content .inner p {
 ********portfolio CSS*****
 **************************/
 
-#portfolio {
-  padding-top:70px;
-  padding-bottom: 0px;
-  z-index: 10;
-  position: relative;
-  background: #fff;
-  /*margin-top: 768px;*/
-}
 
 
 /* Portfolio / Works Sections */
-.hover-bg .hover-text {
-    position: absolute;
-    display: block;
-    bottom: 0;
-    width: 100%;
-    height: 25%;
-    padding: 20px;
-    color: #ffffff;
-    transition: all 0.8s;
-    -webkit-transition: all 08s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
+.box h5{
+	position:absolute;
+  bottom: 50px;
+  left: 30px;
+  font-weight: bold;
+  color: #000;
+  z-index: 100;
+  font-size: 18px
+
 }
-.hover-bg .hover-text.on { opacity: 1 }
-.hover-bg .hover-text.off {
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -webkit-transform: translateX(100%) translateY(-90%);
-    transform: translateX(100%) translateY(-90%);
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.70);
-}
-.hover-bg:hover .hover-text.off {
-    -webkit-transform: translateX(0%) translateY(-90%);
-    transform: translateX(0%)  translateY(-90%);
-    opacity: 1;
+.box h5 small{
+  float: left;
+  color: #434A54;
+   z-index: 101
+} 
+.box img{
+	opacity: .5;
+  z-index: 99
 }
 
 /* Portfolio or works blocks */
-#tf-works { padding: 60px 0 }
+
 ul.cat { margin: 30px 0 }
 ul.cat li a {
     background: inherit;
@@ -308,61 +290,7 @@ ul.cat li a.active {
     border-radius: 3px;
     color: #fff;
 }
-.nopadding { padding: 0 }
-.box a { margin: 2px }
-.box .hover-bg {
-    position: relative;
-    overflow: hidden;
-}
-.box .hover-bg .hover-text {
-    height: 100%;
-    bottom: 0;
-    -webkit-transform: translateX(0%) translateY(0%);
-    transform: translateX(0%) translateY(0%);
-    background: transparent;
-}
-.box:hover .hover-bg .hover-text { background-color: rgba(1, 1, 1, 0.5) }
-.box .hover-bg:hover .hover-text.off {
-    -webkit-transform: translateX(0%) translateY(0%);
-    transform: translateX(0%)  translateY(0%);
-    opacity: 1;
-}
-.box .hover-text i.fa {
-    font-size: 20px;
-    background: #e5b112;
-    padding: 13px;
-    position: relative;
-    top: 40%;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    transition: all 0.5s;
-}
-.box .hover-text i.fa:hover { background: #333333 }
-.box .hover-text i.fa.fa-expand {
-    border-top-right-radius: 0;
-    -webkit-transform: translateX(-400%) translateY(0%);
-    transform: translateX(-400%)  translateY(0%);
-    opacity: 0;
-    transition: all 0.5s;
-}
-.box:hover .hover-text i.fa.fa-expand {
-    -webkit-transform: translateX(0%) translateY(0%);
-    transform: translateX(0%)  translateY(0%);
-    opacity: 1;
-}
-.box .hover-text i.fa.fa-chain {
-    border-top-left-radius: 0;
-    -webkit-transform: translateX(400%) translateY(0%);
-    transform: translateX(400%)  translateY(0%);
-    opacity: 0;
-    transition: all 0.5s;
-}
-.box:hover .hover-text i.fa.fa-chain {
-    -webkit-transform: translateX(0%) translateY(0%);
-    transform: translateX(0%)  translateY(0%);
-    opacity: 1;
-}
+
 /* Style 2 - Not Fullwidth */
 #itemsWorkThree .box,
 #itemsWorkTwo .box { margin-bottom: 30px }
@@ -395,25 +323,12 @@ ul.cat li a.active {
     transform: translateX(0%)  translateY(0%);
     opacity: 1;
 }
-#itemsWorkTwo .box .hover-text i.fa {
-    font-size: 20px;
-    background: transparent;
-    padding: 13px;
-    position: relative;
-    top: 40%;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    transition: all 0.5s;
-    border: 1px solid #ffffff;
-}
-#itemsWorkTwo .box .hover-text i.fa:hover { background: #333333 }
+
 
 /* Isotope Filter */
 .isotope-item { z-index: 2 }
-.isotope-hidden.isotope-item { z-index: 1 }
-.isotope,
-.isotope .isotope-item {
+
+.isotope, .isotope .isotope-item {
     /* change duration value to whatever you like */
     -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
@@ -434,34 +349,7 @@ ul.cat li a.active {
     -moz-transition-property: -moz-transform, opacity;
     transition-property: transform, opacity;
 }
-.nivo-lightbox-theme-default .nivo-lightbox-title {
-    font-size: 14px;
-    background: #f1f1f1;
-    border: 1px solid #333;
-    letter-spacing: 2px;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 10px 35px;
-    border-radius: 2px;
-}
-.nivo-lightbox-theme-default.nivo-lightbox-overlay {
-    background: #ffffff !important;
-    background: rgba(255, 255, 255, 1) !important;
-}
-.nivo-lightbox-theme-default .nivo-lightbox-nav,
-.nivo-lightbox-theme-default .nivo-lightbox-close { opacity: 1 }
-.nivo-lightbox-error {
-    color: #C59A6D !important;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0) !important;
-}
-.nivo-lightbox-theme-default .nivo-lightbox-image img {
-    background: #fff;
-    -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
-    box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
-    border-top: 4px solid #ffcc33;
-}
+
 
 
 
