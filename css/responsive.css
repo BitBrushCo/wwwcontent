@@ -78,6 +78,7 @@
 	.fillWidth-tab{
 		display: block !important;
 		width: 320px !important;
+		margin-top: 40px !important;
 	}
 	.header-content{
 		display: none !important
@@ -95,7 +96,7 @@
 		margin: 23px;
 	}
 	.navbar-brand {
-		padding: 0 5px 5px;
+    	padding: 30px 10px;
 	}
 	.navbar-toggle {
 	  border:1px solid #fff;
@@ -176,6 +177,7 @@
 	.fillWidth-tab{
 		display: block !important;
 		width: 320px !important;
+		margin-top: 40px;
 	}
 	.header-content{
 		display: none !important
@@ -237,6 +239,7 @@
 	.fillWidth-tab{
 		display: block !important;
 		width: 320px !important;
+		margin-top: 40px;
 	}
 	.header-content{
 		display: none !important
