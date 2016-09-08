@@ -239,7 +239,7 @@
 	.fillWidth-tab{
 		display: block !important;
 		width: 320px !important;
-		margin-top: 40px;
+		margin-top: 40px !important;
 	}
 	.header-content{
 		display: none !important
