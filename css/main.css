@@ -185,11 +185,15 @@ header .header-content .inner p {
   pointer-events: none;
 }
 
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
+/*@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 100%; top: -100%; }
 }
 @media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
+  .video-foreground { width: 100%; left: -100%; }
+}*/
+
+.video-background-tablet{
+  display: none;
 }
 
 
