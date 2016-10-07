@@ -239,6 +239,12 @@
 		width:100%;
 		float: none;
 	}
+
+	#portfolio .col-sm-3 {
+		width:25%;
+		float: left;
+	}
+
 	button.navbar-toggle {
 		margin: 23px;
 	}
@@ -262,6 +268,9 @@
 	.sub-head{
 		display: block;
 	}
+	.box h5{
+		display: none;
+	}
 
 	
 }
@@ -279,6 +288,15 @@
 	}*/
 	.header-content{
 		display: none !important
+	}
+
+	#portfolio .col-xs-3 {
+		width:50%;
+		float: none;
+	}
+
+	.box h5{
+		display: none;
 	}
 
 }
